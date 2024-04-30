@@ -1,0 +1,119 @@
+/*0.9vw=1.08rem
+1vw=1.2rem
+1.2vw=1.44rem
+2vw=2.4rem*/
+
+@media only screen and (max-width: 425px) {
+
+nav ul li{
+	font-size: 3vw;
+}
+
+h1{
+	font-size: 5vw;
+}
+
+/*----------------------------------
+			INDEX HTML
+----------------------------------*/
+
+#hero{
+	height: 90vw;
+}
+
+#hero > video{
+	height: 100%;
+	width: auto;
+}
+
+#intro{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.txt-boxx{
+	width: 100%;
+}
+
+.txt-boxx p{
+	font-size: 4vw;
+}
+
+.img-boxx{
+	width: 100%;
+}
+
+/*----------------------------------
+			ESPACIOS HTML
+----------------------------------*/
+
+#grups h2{
+	font-size: 5vw;
+}
+
+.box{
+	width: 100%;
+	margin-bottom: 5vw;
+}
+
+/*----------------------------------
+		FOOTER + CONTACTO HTML
+----------------------------------*/
+
+#cont-page{
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form,
+#map{
+	width: 100%;
+}
+
+#map{
+	height: 50vh;
+}
+
+#footl,
+#footr{
+	width: 100%;
+	height: 100%;
+	padding: 0 5vw 4vw 5vw;
+}
+
+#footl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+#footlogo{
+	width: 100%;
+	height: auto;
+	padding: 0 20vw;
+}
+
+#footlogo > img{
+	width: 100%;
+	height: auto;
+}
+
+#footmap{
+	height: 40vh;
+	width: 100%;
+}
+
+.footmapcont{
+	display: none;
+}
+
+#contact-footer > #btn{
+	width: 40vw;
+	height: 10vw;
+	font-size: 5vw;
+}
+
+footer h5{
+	font-size: 3vw;
+}
