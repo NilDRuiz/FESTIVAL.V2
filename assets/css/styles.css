@@ -1,0 +1,309 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+a{
+	color: #F5F5F5;
+}
+
+
+/*Use truetype if the font type is .ttf or use opentype if the font type is .otf */
+@font-face {
+  font-family: 'fontName';
+  src: url('../typos/fontName_font/fontName.ttf') format('truetype');
+}
+
+body{
+	background-color: #070F2B;
+}
+
+p{
+	font-family: Rubik;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+h1{
+	text-align: center;
+	font-size: 2.5vw;
+	font-family: Handlee;
+	text-transform: uppercase;
+	margin: .5rem;
+}
+
+hr{
+	width: 75vw;
+	border-top: 2px solid #F5F5F5;
+	opacity: 90%;
+	margin: 1rem auto 0 auto;
+}
+
+nav{
+	background-color: #070F2B;
+	padding: 1rem 0;
+	position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+ul{
+	margin: 0;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+/*Add margin*/
+nav ul li{
+	text-align: center;
+	margin: 0.3vw 3vw;
+	transition-duration: 0.278s;
+	font-family: Handlee;
+	text-transform: uppercase;
+	font-size: 1vw;
+}
+
+nav li:hover{
+	transform: scale(1.2);
+}
+
+main{
+	background-color: #101D48;
+	display: flex;
+	width: 96.5%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 17px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+/*----------------------------------
+						INDEX HTML
+----------------------------------*/
+
+#hero{
+	width: 100%;
+	height: auto;
+	height: 43vw;
+	overflow: hidden;
+}
+
+#hero > video{
+	width: 100%;
+	height: auto;
+}
+
+#intro{
+	padding: 9vw 10vw 8vw 10vw;
+	display: flex;
+	align-items: center;
+}
+
+#main-page{
+	flex-wrap: wrap;
+}
+
+.txt-boxx{
+	width: 50%;
+	color: white;
+	padding: 1vw 1vw 0vw 1vw;
+	display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.txt-boxx p{
+	font-size: 1.2vw;
+}
+
+.img-boxx{
+	width: 50%;
+	height: auto;
+	padding: 0 4vw;
+	overflow: hidden;
+}
+
+.img-boxx > img{
+	width: 100%;
+	height: auto;
+}
+
+/*----------------------------------
+							FOOTER
+----------------------------------*/
+
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3.2vw 2vw 5.6vw 2vw;
+	justify-content: center;
+  align-items: flex-start;
+}
+
+footer h5{
+	color: white;
+	font-size: 0.8vw;
+	margin: 0vw 6vw 0vw 0vw;
+}
+
+#footl,
+#footr{
+	width: calc(50% - 5vw);
+	height: 100%;
+	padding: 0 5vw 4vw 5vw;
+}
+
+#footl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+#footlogo{
+	height: 35vh;
+}
+
+#footlogo > img{
+	height: 100%;
+}
+
+#footmap{
+	height: 35vh;
+	width: 30vw;
+}
+
+/*----------------------------------
+					ESPACIOS HTML
+----------------------------------*/
+
+#grups{
+	text-align: center;
+	align-content: center;
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 9vw 10vw 8vw 10vw;
+}
+
+#grups > h2{
+	width: 100%;
+	margin-bottom: 5vw;
+	font-size: 2vw;
+}
+
+.box{
+	background-color: #F5F5F5;
+	height: auto;
+	width: 30%;
+	margin: 1vw;
+	color: black;
+	text-align: left;
+}
+
+.img-box{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.img-box > img{
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%);
+	transition: all .278s;
+	transform: scale(1.02);
+}
+
+.img-box:hover > img{
+	filter: grayscale(0%);
+	transform: scale(1.05);
+}
+
+.txt-box{
+	color: black;
+	padding: 1vw 1vw 0vw 1vw;
+	display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+/*----------------------------------
+					CONTACTO HTML
+----------------------------------*/
+
+#cont-page{
+	height: 79vh;
+
+}
+
+form{
+	width: 50%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 7vw;
+}
+
+.form-group{
+	margin: 0.6vw 0;
+}
+
+#contact-footer{
+	display: flex;
+	justify-content: center;
+}
+
+textarea{
+	resize: none;
+	width: 100%;
+	padding: 10px;
+}
+
+textarea:focus{
+ outline: none;
+}
+
+#btn{
+	width: 7vw;
+	height: 2.3vw;
+	border-width: 1px;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 0.9vw;
+}
+
+#btn-txt{
+	display: inline-block;
+	transition:all .2s;
+}
+
+#btn:hover #btn-txt{
+	transform: scale(1.1);
+}
+
+#map{
+	width: 50%;
+	height: 100%;
+}
